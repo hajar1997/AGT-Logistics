@@ -766,6 +766,19 @@ input::-webkit-inner-spin-button {
         width: 90px !important;
     }
 
+    .carousel-caption h1 {
+        font-size: 35px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 13px !important;
+    }
+
+    .carousel-caption-btn {
+        width: 210px !important;
+        font-size: 13px;
+    }
+
 }
 
 @media screen and (max-width: 1031px) and (min-width:921px) {
