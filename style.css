@@ -726,122 +726,53 @@ input::-webkit-inner-spin-button {
 
 /* Company Gallery End */
 
-
 /* Second / Company Page - End */
 
+/* Third / Our Advantage Page - Start */
+
+.our-advantage-hero-image {
+    background-image: url("./images/our-advantage-hero-img.png");
+    height: 409px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.group-of-cards {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.card_ img {
+    background-color: #1DACB0;
+    padding: 27px;
+    height: 122px;
+    width: 300px;
+}
+
+.card_ h6 {
+    padding: 26px 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.4334px;
+    line-height: 163.9%;
+}
+
+.our-advantage-context p {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 190.5%;
+    color: #020202;
+}
+
+/* Third / Our Advantage Page - End */
 
 
 
 /* MEDIA QUERIES */
-
-@media (max-width: 550px) {
-    .gallery {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media screen and (max-width: 610px) {
-    .img-and-txt h1 {
-        font-size: 1.9rem !important;
-    }
-
-    .logo img {
-        width: 90px !important;
-    }
-
-    .carousel-caption h1 {
-        font-size: 35px !important;
-    }
-
-    .carousel-caption p {
-        font-size: 13px !important;
-    }
-
-    .carousel-caption-btn {
-        width: 210px !important;
-        font-size: 13px;
-    }
-
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
-}
-
-
-@media screen and (max-width: 762px) {
-    .group-of-boxes {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-    }
-
-    .group-of-boxes .box {
-        margin-top: 30px;
-        height: auto;
-    }
-
-    .group-of-boxes .box-1 {
-        margin-top: 0;
-    }
-
-    .group-of-boxes .box-1,
-    .group-of-boxes .box-2,
-    .group-of-boxes .box-3,
-    .group-of-boxes .box-4 {
-        border-bottom: none;
-    }
-
-    .group-of-boxes .box-1,
-    .group-of-boxes .box-3,
-    .group-of-boxes .box-5 {
-        border-right: none;
-    }
-
-    .group-of-services {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .hero-text h1 {
-        font-size: 3rem;
-    }
-
-}
-
-
-@media screen and (max-width: 921px) {
-    .contact-wrap {
-        flex-direction: column;
-        padding: 1.4rem;
-    }
-
-    .mobile-width {
-        width: 100% !important;
-        padding: 0 !important;
-    }
-
-    .num-and-email {
-        flex-direction: column;
-        align-self: flex-start;
-    }
-
-    .contact-info {
-        margin-top: 28px;
-    }
-
-    .footer-menu {
-        width: 100%;
-        padding-top: 55px;
-    }
-
-    .our-address {
-        width: 100%;
-    }
-
-}
 
 
 @media screen and (max-width: 992px) {
@@ -963,6 +894,86 @@ input::-webkit-inner-spin-button {
 }
 
 
+@media screen and (max-width: 762px) {
+    .group-of-boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .group-of-boxes .box {
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .group-of-boxes .box-1 {
+        margin-top: 0;
+    }
+
+    .group-of-boxes .box-1,
+    .group-of-boxes .box-2,
+    .group-of-boxes .box-3,
+    .group-of-boxes .box-4 {
+        border-bottom: none;
+    }
+
+    .group-of-boxes .box-1,
+    .group-of-boxes .box-3,
+    .group-of-boxes .box-5 {
+        border-right: none;
+    }
+
+    .group-of-services {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .our-advantage-hero-image .hero-text h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 610px) {
+    .img-and-txt h1 {
+        font-size: 1.9rem !important;
+    }
+
+    .logo img {
+        width: 90px !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 35px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 13px !important;
+    }
+
+    .carousel-caption-btn {
+        width: 210px !important;
+        font-size: 13px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .our-advantage-hero-image .hero-text h1 {
+        font-size: 2rem;
+    }
+
+}
+
+
 @media screen and (max-width: 1031px) and (min-width:921px) {
     .navbar-menu ul li a {
         padding: 20px 4px;
@@ -972,6 +983,49 @@ input::-webkit-inner-spin-button {
         gap: 40px;
     }
 }
+
+
+@media screen and (max-width: 921px) {
+    .contact-wrap {
+        flex-direction: column;
+        padding: 1.4rem;
+    }
+
+    .mobile-width {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .num-and-email {
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .contact-info {
+        margin-top: 28px;
+    }
+
+    .footer-menu {
+        width: 100%;
+        padding-top: 55px;
+    }
+
+    .our-address {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
 
 
 
