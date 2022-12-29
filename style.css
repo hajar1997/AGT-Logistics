@@ -226,6 +226,17 @@ header nav {
     padding: 0px !important;
 }
 
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+}
+
+
 /* Main Slider End */
 
 /* Section two Start */
@@ -752,7 +763,7 @@ input::-webkit-inner-spin-button {
 }
 
 .card_ h6 {
-    padding: 26px 10px;
+    padding: 26px 38px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -938,6 +949,10 @@ input::-webkit-inner-spin-button {
     .our-advantage-hero-image .hero-text h1 {
         font-size: 3rem;
     }
+
+    .card_ h6 {
+        padding: 26px 104px;
+    }
 }
 
 
@@ -1020,6 +1035,8 @@ input::-webkit-inner-spin-button {
     .gallery {
         grid-template-columns: repeat(1, 1fr);
     }
+
+
 }
 
 
