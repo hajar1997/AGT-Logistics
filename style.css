@@ -621,7 +621,6 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
-    padding-top: 20px;
 }
 
 .copyright-and-date h5 {
@@ -1125,7 +1124,9 @@ input::-webkit-inner-spin-button {
     text-align: center;
     color: #A4A4A4;
 }
-
+.wrapper-container{
+    display: flex;
+}
 /* Fifth /  Service Detail Page End */
 
 /* MEDIA QUERIES */
