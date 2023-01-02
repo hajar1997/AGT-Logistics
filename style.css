@@ -1124,10 +1124,186 @@ input::-webkit-inner-spin-button {
     text-align: center;
     color: #A4A4A4;
 }
-.wrapper-container{
+
+.wrapper-container {
     display: flex;
 }
+
 /* Fifth /  Service Detail Page End */
+
+/* Sixth / Trains Page Start */
+.trains-hero-image {
+    background-image: url("./images/trains-background.png");
+    height: 409px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.group-of-trains {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 2fr 2fr;
+}
+
+.group-of-trains .train {
+    padding-bottom: 20px;
+    height: 161px;
+}
+
+.train-1,
+.train-3 {
+    border-right: 1px solid #1DACB0;
+}
+
+.train-1,
+.train-2 {
+    border-bottom: 1px solid #1DACB0;
+    padding-bottom: 20px;
+}
+
+.train img {
+    width: 300px;
+
+}
+
+.train {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.train-circle {
+    position: absolute;
+    top: 32%;
+    width: 20px;
+    height: 20px;
+    background-color: #1DACB0;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+    z-index: 1000;
+    color: #FFFFFF;
+}
+
+.circle-1,
+.circle-3 {
+    right: 42px;
+
+}
+
+.circle-1,
+.circle-2 {
+    top: 66%;
+}
+
+.circle-3,
+.circle-4 {
+    top: 20%;
+}
+
+.circle-2,
+.circle-4 {
+    left: 42px;
+
+}
+
+.group-of-containers-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.detail-box-2 {
+    padding: 15px;
+    position: relative;
+}
+
+.detail-box-2 p {
+    border-left: 1px solid #1DACB0;
+    padding: 0px 15px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 190.5%;
+    color: #020202;
+}
+
+.simple-box::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 0.5px;
+    background: #1DACB0;
+    position: absolute;
+    left: -45px;
+    top: 39%;
+}
+
+.detail-circle-2 {
+    position: absolute;
+    left: -50px;
+    top: 32%;
+    width: 20px;
+    height: 20px;
+    background-color: #1DACB0;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+    z-index: 1000;
+    color: #FFFFFF;
+}
+
+.special-2 {
+    position: absolute;
+    top: 35%;
+}
+
+.special-box p {
+    border-left: none !important;
+    border-right: 1px solid #1DACB0;
+}
+
+.special-box::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 0.5px;
+    background: #1DACB0;
+    position: absolute;
+    right: -44px;
+    top: 39%;
+}
+
+.right-circle {
+    right: -132%;
+    top: 33%;
+}
+
+.trains-context p {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 190.5%;
+    color: #020202;
+}
+
+/* Sixth / Trains Page End */
+
 
 /* MEDIA QUERIES */
 
@@ -1337,6 +1513,61 @@ input::-webkit-inner-spin-button {
     .right-side-links span {
         text-align: start;
     }
+
+    .train img {
+        padding: 22px;
+    }
+
+    .circle-1,
+    .circle-2 {
+        top: 76%;
+    }
+
+    .circle-1,
+    .circle-3 {
+        right: 30px;
+    }
+
+    .circle-2,
+    .circle-4 {
+        left: 26px;
+    }
+
+    .group-of-trains {
+        margin-top: 55px;
+    }
+
+    .group-of-containers-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .right-circle {
+        right: -146%;
+        top: 35%;
+    }
+
+    .special-box p {
+        border-left: 1px solid #1DACB0 !important;
+        border-right: none !important;
+    }
+
+    .special-box::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 0.5px;
+        background: #1DACB0;
+        position: absolute;
+        left: -45px;
+        top: 39%;
+    }
+
+    .right-circle {
+        right: 109% !important;
+        top: 34% !important;
+    }
 }
 
 
@@ -1356,17 +1587,8 @@ input::-webkit-inner-spin-button {
         margin-top: 0;
     }
 
-    .group-of-boxes .box-1,
-    .group-of-boxes .box-2,
-    .group-of-boxes .box-3,
-    .group-of-boxes .box-4 {
-        border-bottom: none;
-    }
-
-    .group-of-boxes .box-1,
-    .group-of-boxes .box-3,
-    .group-of-boxes .box-5 {
-        border-right: none;
+    .group-of-boxes .box {
+        border: none;
     }
 
     .group-of-services {
@@ -1418,17 +1640,29 @@ input::-webkit-inner-spin-button {
         margin-top: 0;
     }
 
-    .group-of-boxes__ .box-1,
-    .group-of-boxes__ .box-2,
-    .group-of-boxes__ .box-3,
-    .group-of-boxes__ .box-4 {
-        border-bottom: none;
+    .group-of-boxes__ .box {
+        border: none;
     }
 
-    .group-of-boxes__ .box-1,
-    .group-of-boxes__ .box-3,
-    .group-of-boxes__ .box-5 {
-        border-right: none;
+    .group-of-trains {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .train {
+        border: none;
+    }
+
+    .train img {
+        padding-top: 46px;
+    }
+
+    .train-circle {
+        top: 0;
+        left: 0;
+        right: 66%;
     }
 }
 
@@ -1482,6 +1716,8 @@ input::-webkit-inner-spin-button {
     .detail-circle {
         top: 34%;
     }
+
+
 }
 
 
