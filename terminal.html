@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Зерновой терминал</title>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <div class="container">
+            <nav>
+                <!-- Nav-toggler for mobile version only -->
+                <button class="nav-toggler">
+                    <span></span>
+                </button>
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="company.html">О компании</a></li>
+                        <li><a href="our-advantage.html">Наше преймущество</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="trains.html">Подвижной состав</a></li>
+                        <li><a href="terminal.html">Зерновой терминал</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="select-box lang-wrapper">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="1" value="1" name="language" />
+                            <span class="select-box__input-text"><img src="./images/GB.png" alt=""></span>
+                        </div>
+
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="3" value="3" name="language"
+                                checked="checked" />
+                            <span class="select-box__input-text"><img src="./images/RU.png" alt=""></span>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="2" value="2" name="language" />
+                            <span class="select-box__input-text"><img src="./images/AZ.png" alt=""></span>
+                        </div>
+                    </div>
+                    <ul class="select-box__list">
+                        <li>
+                            <label class="select-box__option" for="2" aria-hidden="aria-hidden"> <span
+                                    class="flag-az"><img src="./images/AZ.png" alt=""></span></label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="1" aria-hidden="aria-hidden"> <span
+                                    class="flag-gb"><img src="./images/GB.png" alt=""></span></label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="3" aria-hidden="aria-hidden"> <span
+                                    class="flag-ru"><img src="./images/RU.png" alt=""></span></label>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Hero Section Start -->
+    <section class="hero-section">
+        <div class="terminal-hero-image">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>ЗЕРНОВОЙ ТЕРМИНАЛ В АСТАРЕ</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Terminal Start -->
+    <section class="about-terminal mt-5">
+        <div class="container">
+            <div class="abt-terminal-header">
+                <h1>Описание <span>терминала</span></h1>
+            </div>
+            <div class="terminal-boxes mt-5">
+                <div class="terminal-box bx-1">
+                    <div class="terminal-box-context">
+                        <img src="./images/abt-terminal-1.svg" alt="">
+                        <h6>ТЕРРИТОРИЯ: 7 ГА</h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-2">
+                    <div class="terminal-box-context">
+                        <img src="./images/abt-terminal-2.svg" alt="">
+                        <h6>МОЩНОСТЬ ОДНОВРЕМЕННОГО ХРАНЕНИЯ: 60 ТЫС. Т ЗЕРНА</h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-3">
+                    <div class="terminal-box-context">
+                        <img src="./images/abt-terminal-3.svg" alt="">
+                        <h6>ОТГРУЗКА ВАГОНАМИ : 365 ТОНН В ЧАС В СИЛОСАХ И АВТОМОБИЛЯХ</h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-4">
+                    <div class="terminal-box-context">
+                        <img src="./images/abt-terminal-4.svg" alt="">
+                        <h6>ЧЕТЫРЕ ЖЕЛЕЗНЫХ ДОРОГИ: ДВЕ ШИРОКИЕ КОЛЕИ 1520 Г. И ДВЕ УЗКИХ КОЛЕИ 1435 Г.</h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-5">
+                    <div class="terminal-box-context">
+                        <img src="./images/abt-terminal-5.svg" alt="">
+                        <h6>ВОЗМОЖНОСТЬ ЗАГРУЗКИ МЕШКАМИ НА СКЛАДЕ НА 3 ТЫС. Т</h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-6">
+                    <div class="terminal-box-context">
+                        <img src="./images/abt-terminal-6.svg" alt="">
+                        <h6>МОЩНОСТЬ: 1 МЛН. Т ГОД</h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-7">
+                    <div class="terminal-box-context">
+                    </div>
+                </div>
+                <div class="terminal-box bx-8">
+                    <div class="terminal-box-context">
+                        <img src="./images/abt-terminal-7.svg" alt="">
+                        <h6>ЭТАПЫ РЕАЛИЗАЦИИ: В 2020Г. - 500 ТЫС. Т ГОД, В 2021. - 1 МЛН. Т ГОД.</h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-9">
+                    <div class="terminal-box-context">
+                    </div>
+                </div>
+            </div>
+            <hr class="abt-terminal-hr">
+        </div>
+    </section>
+    <!-- About Terminal End -->
+
+    <!-- Terminal description Start -->
+    <section class="terminal-description mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <div class="abt-terminal-header">
+                        <h1>Описание работы <span>терминала</span></h1>
+                    </div>
+                    <p>Первая очередь зернового терминала представляет собой элеваторный комплекс, рассчитанный на
+                        перевалку 1 млн тонн зерна в год.
+                        <br>
+                        <br>
+                        Прием зерна с железнодорожного транспорта колеей 1520 мм осуществляется двумя потоками
+                        производительностью 175 т/ч каждый, т. е. всего 350 т / ч.
+                        <br>
+                        <br>
+                        На транспортных магистралях зерно подается в рабочую зону элеватора, где, в зависимости от
+                        необходимости и назначения, его отправляют либо на хранение, либо для отправки автомобильным
+                        транспортом, либо тарировка в биг-бэги и хранение на складе.
+                        <br>
+                        <br>
+                        Технологическая схема элеватора является наиболее гибкой поточной схемой работы, обеспечивающей
+                        возможность одновременной приемки, хранения и отгрузки зерна с максимальной производительностью.
+                        <br>
+                        <br>
+                        Оборудование элеваторного комплекса представляет собой технологические машины, предназначенные
+                        для работы в сложных условиях.
+                        <br>
+                        <br>
+                        Перегрузка зерна может осуществляться как непосредственно с железнодорожного транспорта колеи
+                        1520 мм, так и с учетом технологических процессов хранения.
+                        Отгрузка зерна автомобильным транспортом осуществляется через три оперативных силоса
+                        вместимостью 250 тонн каждый.
+                        <br>
+                        <br>
+                        Хранение зерна осуществляется в 10 силосах (1 фаза) общей вместимостью 30 000 тонн. Хранение
+                        биг-бэгов осуществляется на отдельном складе хранения.
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <img src="./images/terminal-description-img.png" alt="">
+                </div>
+                <hr class="abt-terminal-hr">
+            </div>
+        </div>
+    </section>
+    <!-- Terminal description End -->
+
+    <!-- Terminal advantage Start -->
+    <section class="terminal-advantage mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <div class="abt-terminal-header">
+                        <h1>Преимущество <span>терминала</span></h1>
+                    </div>
+                    <p>Переориентация морских перевозок с Каспийского направления и с портов Азово-Черноморского
+                        бассейна на железнодорожные перевозки в сторону Астары за счет строительства зернового
+                        терминала.
+                        <br>
+                        <br>
+                        Основной вид деятельности построенного терминала - перевалка зерна, поступающего ж/д транспортом
+                        из РФ и близлежащих стран, с дальнейшей отправкой по территории Ирана автотранспортом с
+                        возможностью отгрузки как навалом так и с возможностью расфасовки.
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <video poster="/./images/blank-screen.png" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                </div>
+                <hr class="abt-terminal-hr">
+
+            </div>
+        </div>
+    </section>
+    <!-- Terminal advantage End -->
+
+    <!-- Terminal advantage 2 Start -->
+    <section class="terminal-advantage-2 mt-5">
+        <div class="container">
+            <div class="abt-terminal-header">
+                <h1>Преимущество ЖД <span>перед морским путем</span></h1>
+            </div>
+            <div class="terminal-adv-boxes mt-5">
+                <div class="terminal-box bx-1">
+                    <div class="terminal-box-context">
+                        <img src="./images/terminal-adv-1.svg" alt="">
+                        <h6>Грузы, отправляемые по морю, невозможно передать получателю без привлечения автомобильного,
+                            железнодорожного транспорта. Это существенно повышает себестоимость доставляемых товаров;
+                        </h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-2">
+                    <div class="terminal-box-context">
+                        <img src="./images/terminal-adv-2.svg" alt="">
+                        <h6>Малая скорость отправки. В сравнении с другими видами транспорта – автомобилями,
+                            железнодорожными составами, скорость перемещения грузов ниже.
+                        </h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-3">
+                    <div class="terminal-box-context">
+                        <img src="./images/terminal-adv-3.svg" alt="">
+                        <h6>Зависимость от метеоусловий</h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-4">
+                    <div class="terminal-box-context">
+                        <img src="./images/terminal-adv-4.svg" alt="">
+                        <h6>Недостаточное количество флота на Каспий.</h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-5">
+                    <div class="terminal-box-context">
+                        <img src="./images/terminal-adv-5.svg" alt="">
+                        <h6>Отправка грузов по коридору север-юг способствует их более безопасной и быстрой доставке.
+                        </h6>
+                    </div>
+                </div>
+                <div class="terminal-box bx-6">
+                    <div class="terminal-box-context">
+                        <img src="./images/terminal-adv-6.svg" alt="">
+                        <h6>Большое количество судов
+                            с истекшим сроком эксплуатации</h6>
+                    </div>
+                </div>
+            </div>
+            <hr class="abt-terminal-hr">
+    </section>
+    <!-- Terminal advantage 2 End -->
+
+    <!-- Last Section Start -->
+    <section class="last-section mt-5">
+        <div class="container">
+            <div class="abt-terminal-header">
+                <h1>Объем <span>перевалки</span></h1>
+            </div>
+            <p class="mt-5">
+                В настоящий момент возможна приемка зерна в силоса и склад временного хранения для
+                расфасовки зерна в биг-бэги и мешки 25-50 кг.
+                <br>
+                <br>
+                В сезоне 2022-23 года планируется выйти на объем перевалки в размере до 1 млн. тонн ( 1 очередь
+                строительства с мощностью единовременного хранения 30 тыс. тонн.)
+            </p>
+        </div>
+    </section>
+    <!-- Last Section End -->
+    <!-- Footer Start -->
+    <footer class="mt-5 d-flex flex-column">
+        <div class="wrapper-container">
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="index.html" class="fw-500">Главная</a></li>
+                    <li><a href="company.html">О компании</a></li>
+                    <li><a href="our-advantage.html">Наше преймущество</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="trains.html">Подвижной состав</a></li>
+                    <li><a href="terminal.html">Зерновой терминал</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="contact-wrap d-flex">
+                <div class="mobile-width w-50 p-md-5 p-4">
+                    <div class="footer-header">
+                        <h3>Контакты</h3>
+                        <h4>Свяжитесь с нами</h4>
+                    </div>
+                    <form method="POST" id="contactForm" name="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label clas for="name">Имя</label>
+                                    <input type="text" class="form-control" name="name" id="name" required
+                                        placeholder="Введите имя">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="number">Номер телефона</label>
+                                    <input type="number" class="form-control" name="number" id="number" required
+                                        placeholder="Введите номер">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt-3">
+                                    <label for="email">Ваш email</label>
+                                    <input type="email" class="form-control" name="email" required id="email"
+                                        placeholder="Введите email">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt-3">
+                                    <label for="message">Сообщение</label>
+                                    <textarea name="message" class="form-control" id="message" cols="30" required
+                                        rows="7" placeholder="Ваше сообщение"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt-3">
+                                    <input type="submit" value="Отправить" class="btn">
+                                    <div class="submitting"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="hheader-and-icon">
+                        <div class="icon-style">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="hheader d-flex flex-column">
+                            <span>График работы</span>
+                            <span class="h-2">ПН - ПТ, 9.00 - 18.00</span>
+                        </div>
+                    </div>
+                    <div class="our-address">
+                        <div class="address-header">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Адрес</span>
+                        </div>
+                        <div class="actual-address mt-2 mb-2">
+                            <h4>Khatai Plaza 9th floor, Khojali Ave. 15, <br> AZ1010 Baku, Azerbaijan</h4>
+                        </div>
+                    </div>
+                    <div class="num-and-email d-flex align-items-center">
+                        <div class="hheader-and-icon">
+                            <div class="phone-icon icon-style">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="hheader d-flex flex-column">
+                                <span>Номер телефона</span>
+                                <a class="h-2 text-decoration-none text-white" href="tel:994-50-224-04-09">+994
+                                    50 224 04
+                                    09</a>
+                            </div>
+                        </div>
+                        <div class="hheader-and-icon">
+                            <div class="icon-style">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="hheader d-flex flex-column">
+                                <span>email</span>
+                                <a class="h-2 text-decoration-none text-white"
+                                    href="mailto:m.guliyev@agterminal.com">m.guliyev@agterminal.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media-contact mt-3">
+                        <span>Мы в социальных сетях</span>
+                        <div class="social-icons mt-3">
+                            <div class="social-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                                <a class="text-decoration-none text-white"
+                                    href="https://www.instagram.com">Instagram</a>
+                            </div>
+                            <div class="social-icon">
+                                <i class="fa-brands fa-youtube"></i>
+                                <a class="text-decoration-none text-white" href="https://www.youtube.com">Youtube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-and-date">
+            <h5>&copy;
+                <script>document.write(new Date().getFullYear())</script> Все права защищены
+            </h5>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>

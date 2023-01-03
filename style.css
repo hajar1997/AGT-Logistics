@@ -976,6 +976,7 @@ input::-webkit-inner-spin-button {
     height: 161px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .group-of-boxes__ .box-1,
@@ -1013,6 +1014,85 @@ input::-webkit-inner-spin-button {
 .line-2 {
     border-bottom: 1px solid #1DACB0;
 }
+
+.rect {
+    position: absolute;
+    right: -6px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    background: #1DACB0;
+    border-radius: 2.93103px;
+}
+
+.rect_ {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #1DACB0;
+    border-radius: 2.93103px;
+}
+
+.rect-1 {
+    left: -2px;
+    bottom: -5px;
+}
+
+.rect-2 {
+    left: -5px;
+    bottom: -165px;
+}
+
+.rect-3 {
+    left: -5px;
+    bottom: -165px;
+}
+
+.rect-4 {
+    right: -6px;
+    bottom: -4px;
+}
+
+/* 
+.rect-1 {
+    right: 0;
+    top: 0;
+}
+
+.rect-2 {
+    right: 0;
+    top: 0;
+}
+
+.rect-3 {
+    right: 0;
+    top: 0;
+}
+
+.rect-4 {
+    right: 0;
+    top: 0;
+}
+
+.rect-5 {
+    right: 0;
+    top: 0;
+}
+
+.rect-6 {
+    right: 0;
+    top: 0;
+}
+
+.rect-7 {
+    right: 0;
+    top: 0;
+}
+
+.rect-8 {
+    right: 0;
+    top: 0;
+} */
 
 .main-context__ p {
     font-family: 'Montserrat';
@@ -1302,7 +1382,205 @@ input::-webkit-inner-spin-button {
     color: #020202;
 }
 
+.rectangle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #1DACB0;
+    border-radius: 2.93103px;
+}
+
+.rectangle-1 {
+    left: 0px;
+    bottom: -6px;
+}
+
+.rectangle-2 {
+    left: -6px;
+    top: -3px;
+}
+
+.rectangle-3 {
+    right: -6px;
+    top: -6px;
+}
+
+.rectangle-4 {
+    right: -5px;
+    top: -5px;
+}
+
+.rectangle-5 {
+    left: -6px;
+    bottom: 0;
+}
+
+
 /* Sixth / Trains Page End */
+
+/* Seventh / Terminal Page Start */
+.terminal-hero-image {
+    background-image: url("./images/terminal-background.png");
+    height: 409px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.terminal-hero-image .hero-text {
+    width: 65%;
+}
+
+.abt-terminal-header h1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 147.4%;
+    color: #000000;
+}
+
+.abt-terminal-header span {
+    color: #1DACB0;
+}
+
+.terminal-boxes {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.terminal-box-context {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.terminal-box-context h6 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+    color: #060606;
+}
+
+.terminal-box {
+    border: 1px solid #E2E2E3;
+    display: flex;
+}
+
+.bx-1,
+.bx-2,
+.bx-3 {
+    border-top: none;
+}
+
+.bx-1,
+.bx-4,
+.bx-7 {
+    border-left: none;
+}
+
+.bx-3,
+.bx-6,
+.bx-9 {
+    border-right: none;
+}
+
+.bx-7,
+.bx-8,
+.bx-9 {
+    border-bottom: none;
+}
+
+.abt-terminal-hr {
+    margin-top: 30px;
+}
+
+.terminal-description {
+    gap: 20px;
+}
+
+.terminal-description img {
+    width: 421px;
+    height: 650px;
+}
+
+.terminal-description p {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    color: #060606;
+}
+
+.terminal-advantage video {
+    width: 421px;
+    height: 272px;
+}
+
+.terminal-advantage p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.terminal-adv-boxes {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.terminal-adv-boxes .bx-3,
+.terminal-adv-boxes .bx-4 {
+    border-bottom: none;
+}
+
+
+
+.terminal-adv-boxes .bx-3,
+.terminal-adv-boxes .bx-5 {
+    border-left: none;
+}
+
+.terminal-adv-boxes .bx-5,
+.terminal-adv-boxes .bx-6 {
+    border-bottom: none;
+}
+
+.terminal-adv-boxes .bx-5 {
+    border-right: none;
+}
+
+.terminal-adv-boxes .bx-2,
+.terminal-adv-boxes .bx-4 {
+    border-right: none;
+}
+
+.terminal-adv-boxes .bx-2 {
+    border-bottom: none;
+    border-left: none;
+}
+
+.terminal-adv-boxes .bx-3 {
+    border-right: 1px solid #E2E2E3;
+}
+
+.last-section {
+    margin-bottom: 70px;
+}
+
+.last-section p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #060606;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Seventh / Terminal Page End */
+
 
 
 /* MEDIA QUERIES */
@@ -1484,6 +1762,20 @@ input::-webkit-inner-spin-button {
         align-items: center;
     }
 
+    .rect-3 {
+        left: -1px;
+        bottom: -5px;
+    }
+
+    .rect-mobile-none {
+        display: none;
+    }
+
+    .rect-4 {
+        left: -6px;
+        bottom: -4px;
+    }
+
     .group-of-containers {
         display: grid;
         grid-template-columns: 1fr;
@@ -1568,6 +1860,72 @@ input::-webkit-inner-spin-button {
         right: 109% !important;
         top: 34% !important;
     }
+
+    .terminal-hero-image .hero-text {
+        top: 26%;
+    }
+
+    .terminal-boxes {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .bx-2 {
+        border-bottom: none;
+        border-left: none;
+    }
+
+    .bx-2,
+    .bx-4,
+    .bx-8 {
+        border-right: none;
+    }
+
+    .bx-3 {
+        border-right: 1px solid #E2E2E3;
+    }
+
+    .bx-7,
+    .bx-9 {
+        display: none;
+    }
+
+    .bx-8 {
+        border-left: none;
+        border-right: 1px solid #E2E2E3;
+        border-top: none;
+    }
+
+    .bx-6 {
+        border-left: none;
+    }
+
+    .bx-3,
+    .bx-5 {
+        border-left: none;
+    }
+
+    .bx-5,
+    .bx-6 {
+        border-top: none;
+    }
+
+    .terminal-description img {
+        width: 247px;
+        height: 424px;
+        object-fit: contain;
+    }
+
+
+    .terminal-adv-boxes .bx-3,
+    .terminal-adv-boxes .bx-4 {
+        border-bottom: 1px solid #E2E2E3;
+    }
+
+    .terminal-adv-boxes .bx-5 {
+        border-right: 1px solid #E2E2E3;
+    }
+
 }
 
 
@@ -1644,6 +2002,11 @@ input::-webkit-inner-spin-button {
         border: none;
     }
 
+    .rect,
+    .rect_ {
+        display: none;
+    }
+
     .group-of-trains {
         display: grid;
         grid-template-columns: 1fr;
@@ -1663,6 +2026,50 @@ input::-webkit-inner-spin-button {
         top: 0;
         left: 0;
         right: 66%;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .terminal-boxes {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+    .terminal-box-context {
+        padding: 20px 0px;
+    }
+
+    .terminal-box {
+        border: none;
+    }
+
+    .terminal-box img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .abt-terminal-hr {
+        display: none;
+    }
+
+    .terminal-adv-boxes {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+    .terminal-adv-boxes .bx-3 {
+        border: none;
+    }
+
+    .terminal-adv-boxes .bx-5 {
+        border-right: 1px solid #E2E2E3;
+    }
+
+    .terminal-adv-boxes .bx-5,
+    .terminal-adv-boxes .bx-4 {
+        border: none;
     }
 }
 
@@ -1697,6 +2104,20 @@ input::-webkit-inner-spin-button {
         font-size: 2rem;
     }
 
+    .abt-terminal-header h1 {
+        font-size: 24px;
+    }
+
+    .terminal-box-context h6 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .terminal-advantage video {
+        width: 272px;
+        height: auto;
+        margin-top: 25px;
+    }
 }
 
 
@@ -1717,6 +2138,18 @@ input::-webkit-inner-spin-button {
         top: 34%;
     }
 
+    .terminal-hero-image .hero-text {
+        width: 75%;
+    }
+
+    .terminal-description img {
+        width: 383px;
+        height: 620px;
+    }
+
+    .terminal-advantage video {
+        width: 392px;
+    }
 
 }
 
