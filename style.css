@@ -1690,6 +1690,9 @@ input::-webkit-inner-spin-button {
         overflow: visible;
     }
 
+    .current{
+        border: none;
+    }
     .carousel-caption h1 {
         font-size: 48px !important;
     }
@@ -1992,15 +1995,15 @@ input::-webkit-inner-spin-button {
         padding: 25px;
     }
     .card-title {
-        line-height: normal;
+        line-height: 20px;
     }
 
     .card-text {
-        line-height: normal;
+        line-height: 20px;
     }
 
     .card-date {
-        line-height: normal;
+        line-height: 20px;
     }
 }
 
@@ -2143,6 +2146,7 @@ input::-webkit-inner-spin-button {
     .terminal-adv-boxes .bx-4 {
         border: none;
     }
+
 }
 
 
@@ -2189,6 +2193,15 @@ input::-webkit-inner-spin-button {
         width: 272px;
         height: auto;
         margin-top: 25px;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+    .card-title{
+        font-size: 13px;
+    }
+    .card-date p{
+        font-size: 11px;
     }
 }
 
