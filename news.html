@@ -1,12 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Новости</title>
 </head>
+
 <body>
-    
+    <!-- Header Start -->
+    <header>
+        <div class="container">
+            <nav>
+                <!-- Nav-toggler for mobile version only -->
+                <button class="nav-toggler">
+                    <span></span>
+                </button>
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="company.html">О компании</a></li>
+                        <li><a href="our-advantage.html">Наше преймущество</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="trains.html">Подвижной состав</a></li>
+                        <li><a href="terminal.html">Зерновой терминал</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="select-box lang-wrapper">
+                    <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="1" value="1" name="language" />
+                            <span class="select-box__input-text"><img src="./images/GB.png" alt=""></span>
+                        </div>
+
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="3" value="3" name="language"
+                                checked="checked" />
+                            <span class="select-box__input-text"><img src="./images/RU.png" alt=""></span>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="2" value="2" name="language" />
+                            <span class="select-box__input-text"><img src="./images/AZ.png" alt=""></span>
+                        </div>
+                    </div>
+                    <ul class="select-box__list">
+                        <li>
+                            <label class="select-box__option" for="2" aria-hidden="aria-hidden"> <span
+                                    class="flag-az"><img src="./images/AZ.png" alt=""></span></label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="1" aria-hidden="aria-hidden"> <span
+                                    class="flag-gb"><img src="./images/GB.png" alt=""></span></label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="3" aria-hidden="aria-hidden"> <span
+                                    class="flag-ru"><img src="./images/RU.png" alt=""></span></label>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Hero Section Start -->
+    <section class="hero-section">
+        <div class="news-hero-image">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>НОВОСТИ</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"><a href="index.html">Главная</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- News Boxes Start -->
+    <section class="news-boxes mt-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="news-detail.html">
+                            <img src="./images/news-img-1.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="card-date">
+                                <p>19.10.2022</p>
+                            </div>
+                            <a href="news-detail.html">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                            </a>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="news-detail.html">
+                            <img src="./images/news-img-2.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="card-date">
+                                <p>19.10.2022</p>
+                            </div>
+                            <a href="news-detail.html">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                            </a>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="news-detail.html">
+                            <img src="./images/news-img-3.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="card-date">
+                                <p>19.10.2022</p>
+                            </div>
+                            <a href="news-detail.html">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                            </a>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="news-detail.html">
+                            <img src="./images/news-img-4.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="card-date">
+                                <p>19.10.2022</p>
+                            </div>
+                            <a href="news-detail.html">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                            </a>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="news-detail.html">
+                            <img src="./images/news-img-5.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="card-date">
+                                <p>19.10.2022</p>
+                            </div>
+                            <a href="news-detail.html">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                            </a>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="news-detail.html">
+                            <img src="./images/news-img-6.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <div class="card-date">
+                                <p>19.10.2022</p>
+                            </div>
+                            <a href="news-detail.html">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
+                            </a>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News Boxes End -->
+
+    <!-- Footer Start -->
+    <footer class="mt-5 d-flex flex-column">
+        <div class="wrapper-container">
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="index.html" class="fw-500">Главная</a></li>
+                    <li><a href="company.html">О компании</a></li>
+                    <li><a href="our-advantage.html">Наше преймущество</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="trains.html">Подвижной состав</a></li>
+                    <li><a href="terminal.html">Зерновой терминал</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="contact-wrap d-flex">
+                <div class="mobile-width w-50 p-md-5 p-4">
+                    <div class="footer-header">
+                        <h3>Контакты</h3>
+                        <h4>Свяжитесь с нами</h4>
+                    </div>
+                    <form method="POST" id="contactForm" name="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label clas for="name">Имя</label>
+                                    <input type="text" class="form-control" name="name" id="name" required
+                                        placeholder="Введите имя">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="number">Номер телефона</label>
+                                    <input type="number" class="form-control" name="number" id="number" required
+                                        placeholder="Введите номер">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt-3">
+                                    <label for="email">Ваш email</label>
+                                    <input type="email" class="form-control" name="email" required id="email"
+                                        placeholder="Введите email">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt-3">
+                                    <label for="message">Сообщение</label>
+                                    <textarea name="message" class="form-control" id="message" cols="30" required
+                                        rows="7" placeholder="Ваше сообщение"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt-3">
+                                    <input type="submit" value="Отправить" class="btn">
+                                    <div class="submitting"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="hheader-and-icon">
+                        <div class="icon-style">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="hheader d-flex flex-column">
+                            <span>График работы</span>
+                            <span class="h-2">ПН - ПТ, 9.00 - 18.00</span>
+                        </div>
+                    </div>
+                    <div class="our-address">
+                        <div class="address-header">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Адрес</span>
+                        </div>
+                        <div class="actual-address mt-2 mb-2">
+                            <h4>Khatai Plaza 9th floor, Khojali Ave. 15, <br> AZ1010 Baku, Azerbaijan</h4>
+                        </div>
+                    </div>
+                    <div class="num-and-email d-flex align-items-center">
+                        <div class="hheader-and-icon">
+                            <div class="phone-icon icon-style">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="hheader d-flex flex-column">
+                                <span>Номер телефона</span>
+                                <a class="h-2 text-decoration-none text-white" href="tel:994-50-224-04-09">+994
+                                    50 224 04
+                                    09</a>
+                            </div>
+                        </div>
+                        <div class="hheader-and-icon">
+                            <div class="icon-style">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="hheader d-flex flex-column">
+                                <span>email</span>
+                                <a class="h-2 text-decoration-none text-white"
+                                    href="mailto:m.guliyev@agterminal.com">m.guliyev@agterminal.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media-contact mt-3">
+                        <span>Мы в социальных сетях</span>
+                        <div class="social-icons mt-3">
+                            <div class="social-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                                <a class="text-decoration-none text-white"
+                                    href="https://www.instagram.com">Instagram</a>
+                            </div>
+                            <div class="social-icon">
+                                <i class="fa-brands fa-youtube"></i>
+                                <a class="text-decoration-none text-white" href="https://www.youtube.com">Youtube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-and-date">
+            <h5>&copy;
+                <script>document.write(new Date().getFullYear())</script> Все права защищены
+            </h5>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="index2.js"></script>
 </body>
+
 </html>
