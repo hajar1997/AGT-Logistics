@@ -239,6 +239,7 @@ header nav {
 }
 
 
+
 /* Main Slider End */
 
 /* Section two Start */
@@ -820,8 +821,11 @@ input::-webkit-inner-spin-button {
     width: 300px;
 }
 
+.card_ div {
+    padding: 20px 43px;
+}
+
 .card_ h6 {
-    padding: 26px 38px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -1965,10 +1969,6 @@ input::-webkit-inner-spin-button {
         font-size: 3rem;
     }
 
-    .card_ h6 {
-        padding: 26px 104px;
-    }
-
     .modalImage {
         width: 100%;
     }
@@ -2153,7 +2153,12 @@ input::-webkit-inner-spin-button {
 
 }
 
+@media screen and (min-width: 1318px) {
+    .card_ div {
+        padding: 20px 78px;
+    }
 
+}
 @media screen and (max-width: 921px) {
     .contact-wrap {
         flex-direction: column;
