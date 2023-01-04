@@ -23,12 +23,19 @@ function navLinkClick() {
   }
 }
 
+//navbar current page highlight
+for (var i = 0; i < navLinks.length; i++) {
+  if (navLinks[i].href === document.URL) {
+    navLinks[i].className = "current";
+  }
+}
+
 //Carousel
 
-var myCarousel = document.querySelector('#myCarousel')
+var myCarousel = document.querySelector("#myCarousel");
 var carousel = new bootstrap.Carousel(myCarousel, {
   interval: 3000,
-})
+});
 
 // Language choice
 

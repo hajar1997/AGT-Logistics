@@ -23,6 +23,12 @@ function navLinkClick() {
   }
 }
 
+//navbar current page highlight
+for (var i = 0; i < navLinks.length; i++) {
+  if (navLinks[i].href === document.URL) {
+    navLinks[i].className = "current";
+  }
+}
 // Language choice
 
 $(".select-box").on("click", function () {
@@ -43,17 +49,16 @@ if (gallery.children.length > 0) {
   galleryContainer.style.display = "none";
 }
 
-
 // Company Page
 
 var modalEle = document.querySelector(".modal");
 var modalImage = document.querySelector(".modalImage");
-Array.from(document.querySelectorAll(".gallery img")).forEach(item => {
-   item.addEventListener("click", event => {
-      modalEle.style.display = "block";
-      modalImage.src = event.target.src;
-   });
+Array.from(document.querySelectorAll(".gallery img")).forEach((item) => {
+  item.addEventListener("click", (event) => {
+    modalEle.style.display = "block";
+    modalImage.src = event.target.src;
+  });
 });
 document.querySelector(".close").addEventListener("click", () => {
-   modalEle.style.display = "none";
+  modalEle.style.display = "none";
 });
