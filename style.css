@@ -1841,18 +1841,7 @@ input::-webkit-inner-spin-button {
 /* Last / Contact Page Start */
 .contact {
     background: #272727;
-}
-
-
-body {
-    overflow-x: hidden;
-}
-
-.contact-second-part img {
-    width: 126%;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
+    overflow: hidden;
 }
 
 .contactt-info {
@@ -1860,16 +1849,20 @@ body {
     flex-direction: column;
     gap: 20px;
     position: absolute;
-    top: 116%;
-    width: 35%;
-    right: 10%;
+    bottom: 104px;
+    width: 100%;
+    right: 0;
+    left: 47px;
 }
 
 .contact-first-col {
-    width: 45%;
-    margin-right: 5%;
+    width: 48%;
+    margin-right: 2%;
 }
 
+.contact-second-part {
+    position: relative;
+}
 
 
 /* Last / Contact Page End */
@@ -2286,6 +2279,8 @@ body {
     .contactt-info {
         position: inherit;
         width: 77%;
+        left: 0;
+        bottom: 0;
     }
 
     .contact-first-col {
@@ -2556,7 +2551,6 @@ body {
     .card_ div {
         padding: 20px 78px;
     }
-
 }
 
 @media screen and (max-width: 921px) {
@@ -2643,5 +2637,11 @@ body {
 
     .copyright-and-date {
         order: 3;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:992px) {
+    .contact-first-col .num-and-email {
+        flex-direction: column !important;
     }
 }
