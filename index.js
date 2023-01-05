@@ -29,7 +29,6 @@ for (var i = 0; i < navLinks.length; i++) {
     navLinks[i].className = "current";
   }
 }
-
 //Carousel
 
 var myCarousel = document.querySelector("#myCarousel");

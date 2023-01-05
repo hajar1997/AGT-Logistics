@@ -29,6 +29,13 @@ for (var i = 0; i < navLinks.length; i++) {
     navLinks[i].className = "current";
   }
 }
+
+var newsLink = document.querySelector("#news-link");
+
+if (window.location.pathname === "/news-detail.html") {
+  newsLink.className = "current";
+}
+
 // Language choice
 
 $(".select-box").on("click", function () {
