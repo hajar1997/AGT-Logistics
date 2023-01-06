@@ -55,30 +55,24 @@ var map = new jsVectorMap({
   },
   markers: [
     { name: "Azerbaijan", coords: [40.5, 47.5] },
-    { name: "Armenia", coords: [40, 45] },
     { name: "Georgia", coords: [42, 43.5] },
+    { name: "Russia", coords: [60, 100] },
+    { name: "Ukraine", coords: [49, 32] },
+    { name: "Belarus", coords: [53, 28] },
+    { name: "Turkey", coords: [39, 35] },
     { name: "Iran", coords: [32, 53] },
-    { name: "Iraq", coords: [33, 44] },
     { name: "Kazakhstan", coords: [48, 68] },
     { name: "Uzbekistan", coords: [41, 64] },
     { name: "Turkmenistan", coords: [40, 60] },
-    { name: "Afghanistan", coords: [33, 65] },
-    { name: "Syria", coords: [35, 38] },
-    { name: "Kuwait", coords: [29.3375, 47.6581] },
-    { name: "Jordan", coords: [31, 36] },
+    {name: "Tajikistan", coords: [39, 71]},
     { name: "Latvia", coords: [57, 25] },
-    { name: "Lebanon", coords: [33.8333, 35.8333] },
     { name: "Lithuania", coords: [56, 24] },
-    { name: "Russia", coords: [60, 100] },
-    { name: "Turkey", coords: [39, 35] },
-    { name: "Ukraine", coords: [49, 32] },
-    { name: "Belarus", coords: [53, 28] },
     { name: "Estonia", coords: [59, 26] },
   ],
   labels: {
     markers: {
-      render(marker, index) {
-        return marker.name || marker.labelName || "Not available";
+      render(marker) {
+        return marker.name;
       },
     },
   },
@@ -91,7 +85,7 @@ var map = new jsVectorMap({
     },
   },
   focusOn: {
-    regions: ["TR", "AZ", "KZ", "IR", "SY", "LT", "LV", "EE"],
+    regions: ["TR", "AZ", "KZ", "IR","LT", "LV", "EE","TJ","GE","RU","UA","BY","UZ","TM",],
     animate: false,
   },
   showTooltip: false,
