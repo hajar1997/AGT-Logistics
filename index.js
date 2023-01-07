@@ -46,6 +46,8 @@ $(".select-box__option").on("click", function () {
 });
 
 // Map Section
+
+
 var map = new jsVectorMap({
   selector: "#map",
   map: "world",
@@ -54,25 +56,30 @@ var map = new jsVectorMap({
     hover: { fill: "#1DACB0" },
   },
   markers: [
-    { name: "Azerbaijan", coords: [40.5, 47.5] },
-    { name: "Georgia", coords: [42, 43.5] },
-    { name: "Russia", coords: [60, 100] },
-    { name: "Ukraine", coords: [49, 32] },
-    { name: "Belarus", coords: [53, 28] },
-    { name: "Turkey", coords: [39, 35] },
-    { name: "Iran", coords: [32, 53] },
-    { name: "Kazakhstan", coords: [48, 68] },
-    { name: "Uzbekistan", coords: [41, 64] },
-    { name: "Turkmenistan", coords: [40, 60] },
-    {name: "Tajikistan", coords: [39, 71]},
-    { name: "Latvia", coords: [57, 25] },
-    { name: "Lithuania", coords: [56, 24] },
-    { name: "Estonia", coords: [59, 26] },
+    { name: "Azerbaijan", code: "AZ", coords: [40.5, 47.5] },
+    { name: "Georgia", code: "GE", coords: [42, 43.5] },
+    { name: "Russia", code: "RU", coords: [60, 100] },
+    { name: "Ukraine", code: "UA", coords: [49, 32] },
+    { name: "Belarus", code: "BY", coords: [53, 28] },
+    { name: "Turkey", code: "TR", coords: [39, 35] },
+    { name: "Iran", code: "IR", coords: [32, 53] },
+    { name: "Kazakhstan", code: "KZ", coords: [48, 68] },
+    { name: "Uzbekistan", code: "UZ", coords: [41, 64] },
+    { name: "Turkmenistan", code: "TM", coords: [40, 60] },
+    { name: "Tajikistan", code: "TZ", coords: [39, 71] },
+    { name: "Latvia", code: "LT", coords: [57, 25] },
+    { name: "Lithuania", code: "LV", coords: [56, 24] },
+    { name: "Estonia", code: "EE", coords: [59, 26] },
   ],
   labels: {
     markers: {
       render(marker) {
-        return marker.name;
+        const mediaQuery = window.matchMedia("(max-width: 992px)");
+        if (mediaQuery.matches) {
+          return marker.code;
+        } else {
+          return marker.name;
+        }
       },
     },
   },
@@ -85,7 +92,22 @@ var map = new jsVectorMap({
     },
   },
   focusOn: {
-    regions: ["TR", "AZ", "KZ", "IR","LT", "LV", "EE","TJ","GE","RU","UA","BY","UZ","TM",],
+    regions: [
+      "TR",
+      "AZ",
+      "KZ",
+      "IR",
+      "LT",
+      "LV",
+      "EE",
+      "TJ",
+      "GE",
+      "RU",
+      "UA",
+      "BY",
+      "UZ",
+      "TM",
+    ],
     animate: false,
   },
   showTooltip: false,
