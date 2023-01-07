@@ -47,7 +47,6 @@ $(".select-box__option").on("click", function () {
 
 // Map Section
 
-
 var map = new jsVectorMap({
   selector: "#map",
   map: "world",
@@ -66,9 +65,9 @@ var map = new jsVectorMap({
     { name: "Kazakhstan", code: "KZ", coords: [48, 68] },
     { name: "Uzbekistan", code: "UZ", coords: [41, 64] },
     { name: "Turkmenistan", code: "TM", coords: [40, 60] },
-    { name: "Tajikistan", code: "TZ", coords: [39, 71] },
-    { name: "Latvia", code: "LT", coords: [57, 25] },
-    { name: "Lithuania", code: "LV", coords: [56, 24] },
+    { name: "Tajikistan", code: "TJ", coords: [39, 71] },
+    { name: "Latvia", code: "LV", coords: [57, 25] },
+    { name: "Lithuania", code: "LT", coords: [56, 24] },
     { name: "Estonia", code: "EE", coords: [59, 26] },
   ],
   labels: {
