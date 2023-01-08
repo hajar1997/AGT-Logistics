@@ -1963,6 +1963,12 @@ input::-webkit-inner-spin-button {
 
 
 @media screen and (max-width: 992px) {
+
+    header .container {
+        padding: 0px 17px !important;
+        max-width: 926px;
+    }
+
     .nav-toggler {
         display: block;
     }
@@ -2064,6 +2070,7 @@ input::-webkit-inner-spin-button {
     }
 
     .select-box {
+        margin-right: 13px;
         width: auto !important;
     }
 
