@@ -2090,6 +2090,9 @@ input::-webkit-inner-spin-button {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .gallery img{
+        height: 150px;
+    }
 
 
     .map-section text {
@@ -2795,6 +2798,11 @@ input::-webkit-inner-spin-button {
         top: 0;
         left: -77px;
     }
+    .gallery img {
+       object-fit: cover;
+       height: 137px;
+       cursor: pointer;
+   }
 }
 
 @media screen and (max-width: 1031px) {
