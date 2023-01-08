@@ -2090,7 +2090,9 @@ input::-webkit-inner-spin-button {
         grid-template-columns: repeat(2, 1fr);
     }
 
-
+    .gallery img {
+        object-fit: contain;
+    }
 
     .map-section text {
         font-weight: 700;
