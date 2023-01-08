@@ -63,6 +63,9 @@ var modalImage = document.querySelector(".modalImage");
 Array.from(document.querySelectorAll(".gallery img")).forEach((item) => {
   item.addEventListener("click", (event) => {
     modalEle.style.display = "block";
+    modalImage.style.width = "100%";
+    modalImage.style.height = "80%";
+    modalImage.style.objectFit = "contain";
     modalImage.src = event.target.src;
   });
 });
@@ -71,4 +74,3 @@ document.querySelector(".close").addEventListener("click", () => {
 });
 
 //News page
-
