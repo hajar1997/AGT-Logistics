@@ -72,5 +72,3 @@ Array.from(document.querySelectorAll(".gallery img")).forEach((item) => {
 document.querySelector(".close").addEventListener("click", () => {
   modalEle.style.display = "none";
 });
-
-//News page

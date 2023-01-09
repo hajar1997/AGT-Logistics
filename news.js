@@ -45,69 +45,69 @@ $(".select-box__option").on("click", function () {
 
 // News Cards
 
-const valuesCards = [
-  {
-    image: "./images/news-img-1.png",
-    date: "19.10.2022",
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    image: "./images/news-img-2.png",
-    date: "19.10.2022",
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    image: "./images/news-img-3.png",
-    date: "19.10.2022",
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    image: "./images/news-img-4.png",
-    date: "19.10.2022",
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    image: "./images/news-img-5.png",
-    date: "19.10.2022",
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    image: "./images/news-img-6.png",
-    date: "19.10.2022",
-    title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-];
+// const valuesCards = [
+//   {
+//     image: "./images/news-img-1.png",
+//     date: "19.10.2022",
+//     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+//     content:
+//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+//   },
+//   {
+//     image: "./images/news-img-2.png",
+//     date: "19.10.2022",
+//     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+//     content:
+//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+//   },
+//   {
+//     image: "./images/news-img-3.png",
+//     date: "19.10.2022",
+//     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+//     content:
+//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+//   },
+//   {
+//     image: "./images/news-img-4.png",
+//     date: "19.10.2022",
+//     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+//     content:
+//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+//   },
+//   {
+//     image: "./images/news-img-5.png",
+//     date: "19.10.2022",
+//     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+//     content:
+//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+//   },
+//   {
+//     image: "./images/news-img-6.png",
+//     date: "19.10.2022",
+//     title: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+//     content:
+//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+//   },
+// ];
 
-valuesCards.map((card) => {
-  var cardDiv = document.createElement("div");
-  cardDiv.className = "col";
-  cardDiv.innerHTML = `
-        <div class="card h-100" >
-            <a href="news-detail.html">
-              <img src="${card.image}" class="card-img-top" alt="...">
-              </a>
-            <div class="card-body">
-                <div class="card-date">
-                  <p>${card.date}</p>
-                </div>
-                <a href="news-detail.html">
-                  <h5 class="card-title">${card.title}</h5>
-                </a>
-                <p class="card-text">${card.content}</p>
-            </div>
-          </div>
-    `;
-  document.getElementsByClassName("news-container")[0].appendChild(cardDiv);
-});
+// valuesCards.map((card) => {
+//   var cardDiv = document.createElement("div");
+//   cardDiv.className = "col";
+//   cardDiv.innerHTML = `
+//         <div class="card h-100" >
+//             <a href="news-detail.html">
+//               <img src="${card.image}" class="card-img-top" alt="...">
+//               </a>
+//             <div class="card-body">
+//                 <div class="card-date">
+//                   <p>${card.date}</p>
+//                 </div>
+//                 <a href="news-detail.html">
+//                   <h5 class="card-title">${card.title}</h5>
+//                 </a>
+//                 <p class="card-text">${card.content}</p>
+//             </div>
+//           </div>
+//     `;
+//   document.getElementsByClassName("news-container")[0].appendChild(cardDiv);
+// });

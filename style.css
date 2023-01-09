@@ -413,8 +413,7 @@ header nav {
     font-size: 33px;
     line-height: 194.9%;
     color: #000000;
-    padding: 0 135px;
-
+    /* padding: 0 135px; */
 }
 
 
@@ -2090,7 +2089,7 @@ input::-webkit-inner-spin-button {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .gallery img{
+    .gallery img {
         height: 150px;
     }
 
@@ -2617,7 +2616,7 @@ input::-webkit-inner-spin-button {
     }
 
     .map-section h1 {
-        padding: 12px 28px;
+        padding: 11px 0px;
         font-size: 21px;
     }
 
@@ -2796,13 +2795,18 @@ input::-webkit-inner-spin-button {
         display: inline-block;
         position: absolute;
         top: 0;
-        left: -77px;
+        left: -27px;
     }
+
     .gallery img {
-       object-fit: cover;
-       height: 137px;
-       cursor: pointer;
-   }
+        object-fit: cover;
+        height: 137px;
+        cursor: pointer;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 1031px) {
