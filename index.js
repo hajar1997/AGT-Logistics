@@ -101,7 +101,6 @@ var map = new jsVectorMap({
       "EE",
       "TJ",
       "GE",
-      "RU",
       "UA",
       "BY",
       "UZ",
@@ -112,4 +111,6 @@ var map = new jsVectorMap({
   showTooltip: false,
   draggable: false,
   zoomOnScroll: false,
+  bindTouchEvents: true,
 });
+
