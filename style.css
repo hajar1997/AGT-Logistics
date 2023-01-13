@@ -495,7 +495,8 @@ header nav {
 [data-code="CF"],
 [data-code="KE"],
 [data-code="UG"],
-[data-code="FI"] {
+[data-code="FI"],
+[data-code="NO"] {
     display: none;
 }
 
@@ -1551,6 +1552,14 @@ input::-webkit-inner-spin-button {
     top: 33%;
 }
 
+.rc-1::after {
+    top: 20% !important;
+}
+
+.rc-2 {
+    top: 16% !important;
+}
+
 .trains-context p {
     font-family: 'Montserrat';
     font-weight: 600;
@@ -2036,6 +2045,23 @@ input::-webkit-inner-spin-button {
     position: relative;
 }
 
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 897px;
+    width: 950px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 897px;
+    width: 950px;
+}
+
+.mobile-text-light {
+    color: black;
+}
 
 /* Last / Contact Page End */
 
@@ -2178,6 +2204,18 @@ input::-webkit-inner-spin-button {
         font-weight: 700;
     }
 
+    .map-section h1 {
+        padding: 0px 32px;
+        font-size: 16px;
+    }
+
+    #map svg {
+        top: 43px;
+    }
+
+    #map {
+        height: 500px !important;
+    }
 
     [data-index="0"] {
         transform: translate(-14px, -1px);
@@ -2382,6 +2420,10 @@ input::-webkit-inner-spin-button {
         top: 39%;
     }
 
+    .rc-1::after {
+        top: 41% !important;
+    }
+
     .right-circle {
         right: 109% !important;
         top: 34% !important;
@@ -2508,6 +2550,14 @@ input::-webkit-inner-spin-button {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        color: white;
+    }
+
+    .mapouter {
+        display: none;
+    }
+
+    .mobile-text-light {
         color: white;
     }
 
@@ -2696,8 +2746,8 @@ input::-webkit-inner-spin-button {
     }
 
     .map-section h1 {
-        padding: 11px 0px;
-        font-size: 21px;
+        padding: 0px 32px;
+        font-size: 16px;
     }
 
     .carousel-caption h1 {
@@ -2755,6 +2805,14 @@ input::-webkit-inner-spin-button {
     .news-detail-buttons a {
         width: 233px !important;
         padding: 9px 0px;
+    }
+
+    #map svg {
+        top: 69px;
+    }
+
+    #map {
+        height: 365px !important;
     }
 
 
@@ -2872,9 +2930,7 @@ input::-webkit-inner-spin-button {
         transform: translate(-118px, 0px);
     }
 
-    #map {
-        height: 321px !important;
-    }
+
 
     .gallery img {
         object-fit: cover;
@@ -2885,6 +2941,8 @@ input::-webkit-inner-spin-button {
     .social-icons {
         flex-wrap: wrap;
     }
+
+
 }
 
 @media screen and (max-width: 1031px) {
