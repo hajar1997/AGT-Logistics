@@ -2816,6 +2816,7 @@ input::-webkit-inner-spin-button {
     }
 
 
+
 }
 
 
@@ -2930,7 +2931,13 @@ input::-webkit-inner-spin-button {
         transform: translate(-118px, 0px);
     }
 
+    .detail-box-2:nth-child(3) .detail-circle-2 {
+        top: 35%;
+    }
 
+    .slide-2 .detail-box-2:nth-child(4) .detail-circle-2 {
+        top: 36% !important;
+    }
 
     .gallery img {
         object-fit: cover;
