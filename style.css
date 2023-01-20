@@ -1279,10 +1279,10 @@ input::-webkit-inner-spin-button {
 
 .detail-box__ {
     padding: 15px;
-    position: relative;
 }
 
 .detail-box__ p {
+    position: relative;
     border-left: 1px solid #1DACB0;
     padding: 0px 15px;
     font-family: 'Montserrat';
@@ -1292,21 +1292,23 @@ input::-webkit-inner-spin-button {
     color: #020202;
 }
 
-.detail-box__::after {
+.detail-box__ p::after {
     content: "";
     display: block;
     width: 60px;
     height: 0.5px;
     background: #1DACB0;
     position: absolute;
-    left: -45px;
-    top: 39%;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .detail-circle {
     position: absolute;
-    left: -50px;
-    top: 32%;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
     background-color: #1DACB0;
@@ -1323,10 +1325,6 @@ input::-webkit-inner-spin-button {
     color: #FFFFFF;
 }
 
-.special__ {
-    position: absolute;
-    top: 35%;
-}
 
 .service-detail-right-nav {
     text-align: center;
@@ -1473,10 +1471,10 @@ input::-webkit-inner-spin-button {
 
 .detail-box-2 {
     padding: 15px;
-    position: relative;
 }
 
 .detail-box-2 p {
+    position: relative;
     border-left: 1px solid #1DACB0;
     padding: 0px 15px;
     font-family: 'Montserrat';
@@ -1484,23 +1482,26 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
     line-height: 190.5%;
     color: #020202;
+    margin: 0;
 }
 
-.simple-box::after {
+.simple-box p::after {
     content: "";
     display: block;
     width: 60px;
     height: 0.5px;
     background: #1DACB0;
     position: absolute;
-    left: -45px;
-    top: 39%;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .detail-circle-2 {
     position: absolute;
-    left: -50px;
-    top: 32%;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
     background-color: #1DACB0;
@@ -1519,7 +1520,6 @@ input::-webkit-inner-spin-button {
 
 .special-2 {
     position: absolute;
-    top: 31%;
 }
 
 .special-box p {
@@ -1527,28 +1527,20 @@ input::-webkit-inner-spin-button {
     border-right: 1px solid #1DACB0;
 }
 
-.special-box::after {
+.special-box p::after {
     content: "";
     display: block;
     width: 60px;
     height: 0.5px;
     background: #1DACB0;
     position: absolute;
-    right: -44px;
-    top: 39%;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .right-circle {
-    right: -132%;
-    top: 33%;
-}
-
-.rc-1::after {
-    top: 45% !important;
-}
-
-.rc-2 {
-    top: 39% !important;
+    right: -137%;
 }
 
 .trains-context p {
@@ -2393,39 +2385,27 @@ input::-webkit-inner-spin-button {
         gap: 0px;
     }
 
-    .right-circle {
-        right: -146%;
-        top: 35%;
-    }
 
     .special-box p {
+        position: relative;
         border-left: 1px solid #1DACB0 !important;
         border-right: none !important;
     }
 
-    .special-box::after {
+    .special-box p::after {
         content: "";
         display: block;
         width: 60px;
         height: 0.5px;
         background: #1DACB0;
         position: absolute;
-        left: -45px;
-        top: 39%;
+        left: -60px;
     }
 
-    .rc-1::after {
-        top: 41% !important;
-    }
-
+  
  
     .right-circle {
-        right: 109% !important;
-        top: 34% !important;
-    }
-
-    .rc-2 {
-        top: 36% !important;
+        right: 118% !important;
     }
 
     .terminal-hero-image .hero-text {
@@ -2814,9 +2794,6 @@ input::-webkit-inner-spin-button {
         height: 365px !important;
     }
 
-    .rc-2 {
-        top: 37% !important;
-    }
 
 
 }
@@ -2830,14 +2807,6 @@ input::-webkit-inner-spin-button {
 
     .contact-wrap {
         gap: 40px;
-    }
-
-    .special__ {
-        top: 36% !important;
-    }
-
-    .detail-circle {
-        top: 34%;
     }
 
     .terminal-hero-image .hero-text {
@@ -2857,13 +2826,10 @@ input::-webkit-inner-spin-button {
 
 @media screen and (min-width: 1399px) {
     .right-circle {
-        right: -124%;
-        top: 32%;
+        right: -133%;
     }
 
-    .rc-2 {
-        top: 39% !important;
-    }
+ 
 }
 
 @media screen and (min-width: 1318px) {
@@ -2944,9 +2910,6 @@ input::-webkit-inner-spin-button {
         transform: translate(-118px, 0px);
     }
 
-    .detail-box-2:nth-child(3) .detail-circle-2 {
-        top: 35%;
-    }
 
     .gallery img {
         object-fit: cover;
