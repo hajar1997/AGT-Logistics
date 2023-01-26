@@ -1060,10 +1060,15 @@ input::-webkit-inner-spin-button {
     color: #FFFFFF;
 }
 
-.service-icon img {
+.service-icon{
+    width: fit-content;
     background-color: #1DACB0;
     border-radius: 8px;
     padding: 10px;
+}
+
+.service-icon img {
+    filter: brightness(0) invert(1);
 }
 
 .service-detail-hero-text {
