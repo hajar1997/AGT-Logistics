@@ -819,7 +819,8 @@ input::-webkit-inner-spin-button {
 
 .hero-text {
     position: absolute;
-    top: 38%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .hero-text h1 {
@@ -1048,7 +1049,8 @@ input::-webkit-inner-spin-button {
 
 .service-detail-hero-text {
     position: absolute;
-    top: 11%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .detail-content h1 {
@@ -1060,7 +1062,7 @@ input::-webkit-inner-spin-button {
     color: #FFFFFF;
 }
 
-.service-icon{
+.service-icon {
     width: fit-content;
     background-color: #1DACB0;
     border-radius: 8px;
@@ -1589,7 +1591,7 @@ input::-webkit-inner-spin-button {
     bottom: 0;
 }
 
-.slide-wrapper{
+.slide-wrapper {
     overflow-x: hidden;
 }
 
@@ -1817,13 +1819,15 @@ input::-webkit-inner-spin-button {
 /* Eighth / News Page End */
 
 /* Nineth / News Detail Page Start */
-.news-detail-hero-image {
-    background-image: url("./images/news-detail-background.png");
-    height: 409px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.news-detail-hero {
     position: relative;
+
+}
+
+.news-detail-hero-image img {
+    width: 100%;
+    height: 409px;
+    object-fit: cover;
 }
 
 .news-detail {
@@ -1834,7 +1838,8 @@ input::-webkit-inner-spin-button {
 
 .news-detail-hero-text {
     position: absolute;
-    top: 21%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .news-detail-content h1 {
@@ -2407,14 +2412,15 @@ input::-webkit-inner-spin-button {
         left: -60px;
     }
 
-  
- 
+
+
     .right-circle {
         right: 118% !important;
     }
 
     .terminal-hero-image .hero-text {
-        top: 26%;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .terminal-boxes {
@@ -2503,9 +2509,6 @@ input::-webkit-inner-spin-button {
         text-align: start;
     }
 
-    .news-detail-hero-text {
-        top: 13%;
-    }
 
     .news-detail-content h1 {
         font-size: 2.5rem;
@@ -2834,7 +2837,7 @@ input::-webkit-inner-spin-button {
         right: -133%;
     }
 
- 
+
 }
 
 @media screen and (min-width: 1318px) {
@@ -2925,8 +2928,12 @@ input::-webkit-inner-spin-button {
     .social-icons {
         flex-wrap: wrap;
     }
+}
 
-
+@media screen and (max-width:350px) {
+    .news-detail-content h1 {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 1031px) {
