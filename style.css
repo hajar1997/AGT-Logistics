@@ -981,13 +981,18 @@ input::-webkit-inner-spin-button {
 }
 
 .card_ img {
-    background-color: #1DACB0;
-    padding: 27px;
-    height: 122px;
-    width: 300px;
+    width: 80px;
 }
 
-.card_ div {
+._card-image {
+    height: 130px;
+    display: flex;
+    background-color: #1DACB0;
+    justify-content: center;
+    align-items: center;
+}
+
+._card-text {
     padding: 20px 43px;
 }
 
@@ -2840,11 +2845,6 @@ input::-webkit-inner-spin-button {
 
 }
 
-@media screen and (min-width: 1318px) {
-    .card_ div {
-        padding: 20px 78px;
-    }
-}
 
 @media screen and (max-width: 921px) {
     .contact-wrap {
