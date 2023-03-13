@@ -1154,7 +1154,6 @@ input::-webkit-inner-spin-button {
 .group-of-boxes__ .box {
     text-align: center;
     padding: 20px;
-    height: 161px;
     display: flex;
     align-items: center;
     position: relative;
@@ -1219,10 +1218,10 @@ input::-webkit-inner-spin-button {
     bottom: -5px;
 }
 
-.rect-2 {
+/* .rect-2 {
     left: -5px;
     bottom: -165px;
-}
+} */
 
 .rect-3 {
     left: -5px;
@@ -2288,54 +2287,30 @@ input::-webkit-inner-spin-button {
         gap: 0;
     }
 
-    .group-of-boxes__ .box-1,
-    .group-of-boxes__ .box-2,
-    .group-of-boxes__ .box-4,
-    .group-of-boxes__ .box-5 {
-        border-right: none;
-    }
-
-    .group-of-boxes__ .box-3,
-    .group-of-boxes__ .box-6 {
-        border-right: none;
-    }
-
-    .group-of-boxes__ .box-1,
-    .group-of-boxes__ .box-2,
-    .group-of-boxes__ .box-3,
-    .group-of-boxes__ .box-4 {
-        border-bottom: 1px solid #1DACB0;
-    }
-
-    .group-of-boxes__ .box-1,
-    .group-of-boxes__ .box-3,
-    .group-of-boxes__ .box-5 {
-        border-right: 1px solid #1DACB0;
-    }
-
-    .line-1 {
-        border-bottom: none;
-    }
-
     .group-of-boxes__ {
         display: grid;
-        grid-template-columns: 4fr 4fr;
-        padding: 70px 0px;
+        grid-template-columns: 1fr;
         align-items: center;
     }
 
-    .rect-3 {
-        left: -1px;
-        bottom: -5px;
+    .group-of-boxes__ .box {
+        margin-top: 30px;
+        height: auto;
+        padding: 0;
+        text-align: start;
     }
 
-    .rect-mobile-none {
+    .group-of-boxes__ .box-1 {
+        margin-top: 0;
+    }
+
+    .group-of-boxes__ .box {
+        border: none;
+    }
+
+    .rect,
+    .rect_ {
         display: none;
-    }
-
-    .rect-4 {
-        left: -6px;
-        bottom: -4px;
     }
 
     .group-of-containers {
@@ -2619,31 +2594,7 @@ input::-webkit-inner-spin-button {
         width: 50px;
     }
 
-    .group-of-boxes__ {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-    }
 
-    .group-of-boxes__ .box {
-        margin-top: 30px;
-        height: auto;
-        padding: 0;
-        text-align: start;
-    }
-
-    .group-of-boxes__ .box-1 {
-        margin-top: 0;
-    }
-
-    .group-of-boxes__ .box {
-        border: none;
-    }
-
-    .rect,
-    .rect_ {
-        display: none;
-    }
 
     .group-of-trains {
         display: grid;
